@@ -2,7 +2,7 @@
 
 ## **实现思路**
 
-​	unity烘焙的lightmap信息记录在了每个场景的LightingData的.asset的资源文件里，却没有提供任何操作这个资源的API，这样就想在runtime的时候加载Lightmap就特别恶心了。对此unity官方技术人员提出了一个解决方案：把烘焙好的信息保存到预制里，在加载预制时再把保存在预制里的光照信息还原到预制里的render里。
+​	unity烘焙的lightmap信息记录在了每个场景的LightingData的.asset的资源文件里，却没有提供任何操作这个资源的API，这样就想在runtime的时候加载Lightmap就特别恶心了。对此unity官方技术人员提出了一个解决方案：**把烘焙好的信息保存到预制里，在加载预制时再把保存在预制里的光照信息还原到预制里的render里。**
 
 ## **使用**
 
